@@ -12,8 +12,6 @@
         <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
         <script>
             eruda.init();
-            confirm(" chào mừng bạn đã đến với trang web của tôi!");
-            alert("Hãy trải nghiệm và cho tôi phản hồi nhé");
         </script>
         <style>
             body {
@@ -39,7 +37,7 @@
                 left: 0;
                 width: 100%;
                 background-color: #006600;
-                z-index: 0;
+                z-index: 999;
             }
             .anh {
                 width: 30px;
@@ -53,11 +51,12 @@
             }
             #video {
                 width: 200px;
-                margin-top: 10px;
+                margin-top: 15%;
                 margin: 10px;
                 border: solid;
                 border-radius: 20px;
                 cursor: pointer;
+                margin-top: 15}
             }
             .v {
                 margin-top: 20%;
@@ -67,8 +66,7 @@
             }
             .vid {
                 text-align: center;
-                margin-top: 20px;
-            }
+                margin-top: 15%; border: solid #fff4a4 ; background: #fff4a4; width: 100%;}
             .card {
                 width: 70%;
                 background: white;
@@ -85,7 +83,7 @@
                 padding: 10px;
             }
             #HTML {
-                background-color: #ff9240;
+                background-color: #ff9240; margin-top: 15%;}
             }
             #h1 {
                 font-size: 10px;
@@ -116,8 +114,9 @@
                 text-decoration: none;
                 margin: 10px;
                 color: white;
-                cursor: pointer;
-            }
+                cursor: pointer;}
+            .p2{ font-size: 50px; margin-top: 20%;}
+.video{ margin-top: 15%;
         </style>
     </head>
     <body>
@@ -174,11 +173,11 @@
         <div class="save">
             <p id="text"><b>SAVE CODE COMMANDS</b></p>
         </div>
-        <div class="v">
+        <div class="v1">
             <div id="HTML" class="card">
                 <h1 id="h1" style="font-size: 18px"><b>HTML Ex :</b></h1>
                 <div id="ex" class="card-text">
-                    <pre><code><b>&lt;!doctype html&gt;
+                    <pre><code>&lt;!doctype html&gt;
 &lt;html lang="vi"&gt;
     &lt;head&gt;
         &lt;meta charset="UTF-8" /&gt;
@@ -195,7 +194,7 @@
     &lt;body&gt;
     
     &lt;/body&gt;
-&lt;/html&gt;</b>
+&lt;/html&gt;
   </code></pre>
                 </div>
             </div>
@@ -207,6 +206,9 @@
                     <video autoplay muted id="video">
                         <source src="code1.mp4" />
                     </video>
+                    <div class="p2">
+                        <p2><b>HTML</b> </p2>
+                    </div>
                 </div>
             </div>
         </div>
