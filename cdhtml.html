@@ -13,59 +13,71 @@
         <script>
             eruda.init();
         </script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
         <style>
-            body {
-                background-color: #d9eee1;
-            }
-            p {
-                font-size: 25px;
-                color: #ffffa9;
-                font-family: Sans-Serif;
-                text-align: center;
-                width: fit-content;
-                background: #ff9240;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 15%;
-                border: 6px solid #6d9fe7;
-                border-radius: 50px;
-                padding: 8px 30px;
-            }
-            .navbar-collapse {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background-color: #006600;
-                z-index: 0;
-            }
-            .anh {
-                width: 30px;
-                margin-left: 20px;
-                cursor: pointer;
-            }
-            .anh1 {
-                width: 30px;
-                margin-left: 60px;
-                cursor: pointer;
-            }
-             .icon {
-                display: none;
-            }
-            @media (orientation: landscape) {
-                .icon {
-                    display: inline-block;
-                }
-            }
-            .navbar {
-                text-decoration: none;
-            }
-            #mxh {
-                text-decoration: none;
-                margin: 10px;
-                color: white;
-                cursor: pointer;
-            }
+                                    body {
+                                        background-color: #d9eee1;
+                                    }
+                                    p {
+                                        font-size: 25px;
+                                        color: #ffffa9;
+                                        font-family: Sans-Serif;
+                                        text-align: center;
+                                        width: fit-content;
+                                        background: #ff9240;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                        margin-top: 15%;
+                                        border: 6px solid #6d9fe7;
+                                        border-radius: 50px;
+                                        padding: 8px 30px;
+                                    }
+                                    .navbar-collapse {
+                                        position: absolute;
+                                        top: 100%;
+                                        left: 0;
+                                        width: 100%;
+                                        background-color: #006600;
+                                        z-index: 0;
+                                    }
+                                    .anh {
+                                        width: 30px;
+                                        margin-left: 20px;
+                                        cursor: pointer;
+                                    }
+                                    .anh1 {
+                                        width: 30px;
+                                        margin-left: 60px;
+                                        cursor: pointer;
+                                    }
+                                    .icon {
+                                        display: none;
+                                    }
+                                    @media (orientation: landscape) {
+                                        .icon {
+                                            display: inline-block;
+                                        }
+                                    }
+                                    .navbar {
+                                        text-decoration: none;
+                                    }
+                                    #mxh {
+                                        text-decoration: none;
+                                        margin: 10px;
+                                        color: white;
+                                        cursor: pointer;
+                                    }
+                        .h1{ font-size: 28px}
+                        .hoc,.hr{ margin-left: 15px; margin-top: 10% ; margin-right: 15px}
+                        .vidu{ font-size: 14px}.nd{ font-size: 16px}
+            .hieu{ margin-right: 10% ;}
+.card{ border: 0px solid  ; background-color: #CCCCCC; padding: 8px; border-radius: 10px; margin-top: 5%;}
+.h2{ margin-left: 10px;}
+#Doc{ border: 4px solid #CCCCCC; margin-left: 10px; margin-right: 10px; border-radius: 10px;
         </style>
     </head>
     <body>
@@ -122,5 +134,69 @@
         <div class="save">
             <p id="text"><b>SAVE CODE HTML</b></p>
         </div>
+        <div>
+            <hr class="hr" />
+            <div class="hoc">
+                <h1 class="h1"><b>Học Về HTML </b></h1>
+                <p1 class="nd"
+                    >HTML là ngôn ngữ đánh dấu tiêu chuẩn cho các trang web.<br />
+                    Với HTML, bạn có thể tạo trang web của riêng mình.<br />
+                    HTML rất dễ học - Bạn sẽ thích nó!<br />
+                    <b>Hiểu đơn giản</b> HTML giống như<b>"khung xương"</b> của
+                    <b>website</b>:<br />
+                    <ul class="hieu">
+                        <li>
+                            HTML là viết tắt của Hyper Text Markup Language
+                            (Ngôn ngữ đánh dấu siêu văn bản)
+                        </li>
+                        <li>
+                            HTML là ngôn ngữ đánh dấu tiêu chuẩn để tạo các
+                            trang web.
+                        </li>
+                        <li>HTML bao gồm một loạt các phần tử.</li>
+                        <li>
+                            Các phần tử HTML cho trình duyệt biết cách hiển thị
+                            nội dung.
+                        </li>
+                        <li>
+                            Các phần tử HTML dùng để gắn nhãn cho các phần nội
+                            dung, ví dụ như "đây là tiêu đề", "đây là đoạn văn",
+                            "đây là liên kết", v.v.
+                        </li>
+                        <li>
+                            Nó quyết định: có gì trên trang (chữ, ảnh, nút…)
+                        </li>
+                        <li>Nhưng <b>không làm đẹp</b> (việc đó là CSS)</li>
+                        <li>
+                            Và <b>không xử lý logic</b> (việc đó là JavaScript)
+                        </li>
+                    </ul>
+                </p1>
+            </div>
+        </div>
+        <hr />
+        <div>
+            <h1 class="h1"><b>Một tài liệu đơn giản</b></h1>
+            <div class="card">
+                <h1 class="h2">Ví dụ</h1>
+                <div id="Doc" class=" card-text">
+                    <pre><code class="vidu language-javascript">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Trang đầu tiên&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Xin chào&lt;/h1&gt;
+    &lt;p&gt;Đây là web của tôi&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+                </div>
+            </div>
+        </div>
+        <script>
+            hljs.highlightAll();
+        </script>
     </body>
 </html>

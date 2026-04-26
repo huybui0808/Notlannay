@@ -13,6 +13,11 @@
         <script>
             eruda.init();
         </script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
         <style>
             body {
                 background-color: #d9eee1;
@@ -49,7 +54,7 @@
                 margin-left: 60px;
                 cursor: pointer;
             }
-             .icon {
+            .icon {
                 display: none;
             }
             @media (orientation: landscape) {
@@ -122,5 +127,8 @@
         <div class="save">
             <p id="text"><b>SAVE CODE BOOS</b></p>
         </div>
+        <script>
+            hljs.highlightAll();
+        </script>
     </body>
 </html>
