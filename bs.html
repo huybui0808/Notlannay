@@ -16,13 +16,9 @@
         <style>
             body {
                 background-color: #d9eee1;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-position: center;
-                background-size: cover;
             }
             p {
-                font-size: 32px;
+                font-size: 25px;
                 color: #ffffa9;
                 font-family: Sans-Serif;
                 text-align: center;
@@ -30,7 +26,7 @@
                 background: #ff9240;
                 margin-left: auto;
                 margin-right: auto;
-                margin-top: 100px;
+                margin-top: 15%;
                 border: 6px solid #6d9fe7;
                 border-radius: 50px;
                 padding: 8px 30px;
@@ -41,38 +37,61 @@
                 left: 0;
                 width: 100%;
                 background-color: #006600;
-                z-index: 999;
+                z-index: 0;
             }
             .anh {
                 width: 30px;
-                margin-left: 40px;
+                margin-left: 20px;
                 cursor: pointer;
             }
-            #video {
-                width: 200px;
-
-                margin-left: 5%;
-                border: solid;
-                border-radius: 20px;
+            .anh1 {
+                width: 30px;
+                margin-left: 60px;
+                cursor: pointer;
             }
-            .video {
-                border-radius: 20px;
-                border: solid;
-                padding: 20px 5px;
+             .icon {
+                display: none;
             }
-            .v {
-                margin-top: 100px;
+            @media (orientation: landscape) {
+                .icon {
+                    display: inline-block;
+                }
+            }
+            .navbar {
+                text-decoration: none;
+            }
+            #mxh {
+                text-decoration: none;
+                margin: 10px;
+                color: white;
+                cursor: pointer;
             }
         </style>
     </head>
     <body>
         <div class="navbar navbar-expand-lg bg-success text-white">
-            <a href="index.html" class="navbar-brand text-white">Trang chủ</a>
+            <a href="index.html" class="navbar text-white" id="chu"
+                >Trang chủ</a
+            >
             <div>
-                <img src="css.jpg" class="anh" />
-                <img src="css1.jpg" class="anh" />
-                <img src="code.jpg" class="anh" />
-                <img src="coding.jpg" class="anh" />
+                <img src="fb.jpg" class="anh" /><a
+                    id="mxh"
+                    href="https://www.facebook.com/share/1D1K1LEcNz/"
+                    >Trung Huy</a
+                >
+                <img src="tiktok.jpg" class="anh" /><a
+                    id="mxh"
+                    href="https://www.tiktok.com/@trung_huy_?_r=1&_t=ZS-95r5i4u1LU0"
+                    >Trung Huy</a
+                >
+            </div>
+            <div class="icon">
+                <img src="css.jpg" class="anh1" />
+                <img src="css1.jpg" class="anh1" />
+                <img src="code.jpg" class="anh1" />
+                <img src="pc.jpg" class="anh1" />
+                <img src="css2.jpg" class="anh1" />
+                <img src="html.jpg" class="anh1" />
             </div>
             <button
                 class="navbar-toggler"
@@ -82,7 +101,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nav">
-                <div class="navbar-nav">
+                <div class="navbar-nav" id="code">
                     <a class="nav-link text-white" href="python.html"
                         >Code Python</a
                     >
@@ -94,12 +113,14 @@
                         >Code Java</a
                     >
                     <a class="nav-link text-white" href="css.html">Code CSS</a>
-                    <a class="nav-link text-white" href="bs.html">Code Bootstrap</a>
+                    <a class="nav-link text-white" href="bs.html"
+                        >Code Bootstrap</a
+                    >
                 </div>
             </div>
         </div>
         <div class="save">
-            <p id="text"><b>SAVE CODE BST</b></p>
+            <p id="text"><b>SAVE CODE BOOS</b></p>
         </div>
     </body>
 </html>
