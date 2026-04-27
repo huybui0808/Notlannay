@@ -18,67 +18,8 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css"
         />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-        <style>
-                                    body {
-                                        background-color: #d9eee1;
-                                    }
-                                    p {
-                                        font-size: 25px;
-                                        color: #ffffa9;
-                                        font-family: Sans-Serif;
-                                        text-align: center;
-                                        width: fit-content;
-                                        background: #ff9240;
-                                        margin-left: auto;
-                                        margin-right: auto;
-                                        margin-top: 15%;
-                                        border: 6px solid #6d9fe7;
-                                        border-radius: 50px;
-                                        padding: 8px 30px;
-                                    }
-                                    .navbar-collapse {
-                                        position: absolute;
-                                        top: 100%;
-                                        left: 0;
-                                        width: 100%;
-                                        background-color: #006600;
-                                        z-index: 0;
-                                    }
-                                    .anh {
-                                        width: 30px;
-                                        margin-left: 20px;
-                                        cursor: pointer;
-                                    }
-                                    .anh1 {
-                                        width: 30px;
-                                        margin-left: 60px;
-                                        cursor: pointer;
-                                    }
-                                    .icon {
-                                        display: none;
-                                    }
-                                    @media (orientation: landscape) {
-                                        .icon {
-                                            display: inline-block;
-                                        }
-                                    }
-                                    .navbar {
-                                        text-decoration: none;
-                                    }
-                                    #mxh {
-                                        text-decoration: none;
-                                        margin: 10px;
-                                        color: white;
-                                        cursor: pointer;
-                                    }
-                        .h1{ font-size: 28px}
-                        .hoc,.hr{ margin-left: 15px; margin-top: 10% ; margin-right: 15px}
-                        .vidu{ font-size: 14px}.nd{ font-size: 16px}
-            .hieu{ margin-right: 10% ;}
-.card{ border: 0px solid  ; background-color: #CCCCCC; padding: 8px; border-radius: 10px; margin-top: 5%;}
-.h2{ margin-left: 10px;}
-#Doc{ border: 4px solid #CCCCCC; margin-left: 10px; margin-right: 10px; border-radius: 10px;
-        </style>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="navbar navbar-expand-lg bg-success text-white">
@@ -176,11 +117,11 @@
         </div>
         <hr />
         <div>
-            <h1 class="h1"><b>Một tài liệu đơn giản</b></h1>
-            <div class="card">
+            <h1 class="h2"><b>Một tài liệu đơn giản</b></h1>
+            <div id="cardcdhtml" class="card">
                 <h1 class="h2">Ví dụ</h1>
-                <div id="Doc" class=" card-text">
-                    <pre><code class="vidu language-javascript">&lt;!DOCTYPE html&gt;
+                <div id="Doc" class="card-text">
+                    <pre><code id="myCode" class="vidu language-javascript">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Trang đầu tiên&lt;/title&gt;
@@ -190,8 +131,13 @@
     &lt;p&gt;Đây là web của tôi&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-
 </code></pre>
+                    <div id="footer" class="card-footer">
+                        <p4 class="trong">hhhhhhhhhhhhhh</p4>
+                        <button id="saochep" onclick="copyCode()">
+                            Sao chép
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
