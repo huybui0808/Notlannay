@@ -3,7 +3,7 @@
                 navigator.clipboard
                     .writeText(codeText)
                     .then(function () {
-                        alert("Đã sao chép toàn bộ lệnh!");
+                        alert("🇻🇳Đã sao chép toàn bộ lệnh!🇻🇳");
                     })
                     .catch(function (err) {
                         console.error("Lỗi khi sao chép: ", err);
